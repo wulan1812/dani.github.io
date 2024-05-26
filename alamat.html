@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<style>
+    .container-fluid{
+        background-color: rgb(19, 17, 17);
+    }
+    .lu{
+        /* margin-left: 50PX; */
+        font-size: 30PX;
+        font-weight: 200;
+        font-family: colonna mt;
+    }
+    .kotak {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    max-width: 100%; /* Membatasi lebar maksimum */
+    overflow: hidden; /* Menghindari elemen yang meluap */
+}
+
+.kotak img.uy {
+    max-width: 500px; /* Membuat gambar maksimum 100% dari kontainernya */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+body{
+  background-color: rgba(24, 157, 245, 0.699);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Memusatkan konten secara horizontal jika tidak memenuhi satu baris */
+}
+
+.map-container {
+    flex: 1 1 50%; /* Membuat peta mengisi setengah lebar layar */
+    min-width: 300px; /* Lebar minimum untuk memastikan responsif */
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 150%;
+    border: 0;
+}
+
+.col-12 {
+    flex: 1 1 50%; /* Membuat teks mengisi setengah lebar layar */
+    min-width: 300px; /* Lebar minimum untuk memastikan responsif */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.k1 {
+    text-align: left; /* Meratakan teks ke kanan */
+    color: #070707;
+    margin-top: 70px;
+    font-family:Rockwell;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .k1 {
+        text-align: center; /* Meratakan teks ke tengah untuk layar kecil */
+       
+    }
+}
+
+.k{
+  font-family: Goudy Stout;
+  font-size: 20px;
+}
+.j{
+  font-family: Matura MT Script Capitals;
+  font-size: 20px;
+}
+.pl{
+  font-family: Bodoni MT Black;
+  font-size: 25px;
+}
+.uy{
+  width: 350px;
+}
+.po{
+      height: 40px;
+      text-align: center;
+      color: #fff;
+      background-color:rgb(12, 12, 12);
+      font-family: Matura MT Script Capitals;
+      font-size: 20px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="jurusan.html"><button type="button" class="btn btn-outline-success">Jurusan</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="alamat.html"><button type="button" class="btn btn-outline-danger">Alamat</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galery.html"><button type="button" class="btn btn-outline-warning">Galery</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost/CRUD-SMK%201%20PETIR/login.php"><button type="button" class="btn btn-outline-info">Login</button>
+                </a>
+              </li>
+              <div class="lu">
+                <a href="#" class="link-danger">SMK</a>
+                <a href="#" class="link-warning">NEGERI</a>
+                <a href="#" class="link-info">1</a>
+                <a href="#" class="link-light">PETASIA TIMUR</a>
+                </div>
+            </ul>
+            </div>
+        </div>
+      </nav>
+      <div class="kotak mb-3">
+        <img data-aos="flip-right"  data-aos-duration="2000" class="uy" src="img/logo.jpg" alt="">
+    </div>    
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-12 text-center">
+            <div class="ko" data-aos="fade-up"
+            data-aos-duration="2000">
+              <h1 class="k">SMK NEGERI 1 PETASIA TIMUR...</h1>
+              <p class="j">Kabupaten Morowali Utara- Sulawesi Tengah.</p>
+              <h1 class="pl">Informasi Sekolah</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.979579431311!2d121.49385207406934!3d-2.1614724372070606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d90031479e5d4af%3A0xc75f322afc291d13!2sSMKN%201%20PETASIA%20TIMUR!5e0!3m2!1sid!2sid!4v1716120576576!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>        
+    <div class="col-12">
+        <div class="kok">
+            <p class="k1" data-aos="fade-left" data-aos-duration="2000">
+                Nama : SMK NEGERI 1 PETASIA TIMUR <br>
+                NPSN : 69980344 <br>
+                Alamat : JL. TRANS SULAWESI RT 1 RW 1 Molores Kode Pos 94693 <br>
+                Kecamatan : Petasia Timur <br>
+                Kabupaten / Kota : Kabupaten Morowali Utara <br>
+                Provinsi : Sulawesi Tengah <br>
+                Status Sekolah : NEGERI <br>
+                Jenis Pendidikan : SMK<br>
+                Email : smk1petirr@gmail.com
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+<P class="po"><i class="bi bi-heart-fill text-danger" target="_blank"></i>By Ainun Aswar💞</P> 
+</body>
+</html>
